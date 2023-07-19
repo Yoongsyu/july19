@@ -19,7 +19,8 @@
 </div>
 	<div style="text-align : center;" >	
 	<img alt = "" src="./img/image.jpg" >
-	<button onclick="location.href='./write'">글쓰기</button>
+	<button onclick="location.href='./write'"
+	style = "background-color:#AED581;">글쓰기</button>
 	</div>	
 	<table>
 		<tr>
