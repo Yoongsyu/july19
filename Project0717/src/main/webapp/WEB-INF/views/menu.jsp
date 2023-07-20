@@ -9,6 +9,7 @@
 			<li onclick="link('mike')">Boo</li>		
 			<li onclick="link('monsters')">Monsters, inc.</li>
 			<li onclick="link('mooni')">문의사항</li>		
+			<li onclick="link('login')">login</li>		
 		</ul>
 	</nav>
 	<div style="height: 50px; width: 100%;"></div>

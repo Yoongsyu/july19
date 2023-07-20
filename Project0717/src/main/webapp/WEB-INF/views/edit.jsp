@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>글쓰기</title>
+<title>edit</title>
 <link rel="stylesheet" href="./css/menu.css">
 <link rel="stylesheet" href="./css/write.css">
 <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
@@ -26,10 +26,11 @@
 		   <h1 style="padding:10px 10px 10px 25px; font-weight:bold; font-family: S-CoreDream-3Light;">
 		   예쁜말만 써주세요 *^^*</h1>
 		<div class="write-div">
-		<form action="./write" method="post">
-		<input type="text" name="title">
-		<textarea id= "summernote" name="content"></textarea>
-		<button class="button" type="submit">글쓰기</button>
+		<form action="./edit" method="post">
+		<input type="text" name="btitle" value="${dto.btitle }">
+		<textarea id= "summernote" name="bcontent">${dto.bcontent }</textarea>
+		<button class="button" type="submit">edit</button>
+		<input type="hidden" name="bno" value="${dto.bno }">
 		</form>
 		<!-- type = "submit" => 제출버튼, 폼데이터로 데이터 전송 -->
 	</div>

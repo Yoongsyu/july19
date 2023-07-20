@@ -45,3 +45,7 @@
 	height: auto;
 }
 
+.name2, .content2, .date2, .ip2, .good, .bad{
+	text-align : middle;
+}
+

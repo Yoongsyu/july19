@@ -8,14 +8,18 @@
 <link rel="stylesheet" href="./css/menu.css">
 <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 <link rel="icon" href="./img/favicon.ico" type="image/x-con">
+
+ 
 </head>
 <body>
 	<%@ include file="menu.jsp"%>
 	<br>
 	<br>
 	<div style="text-align: center";>
-		<img alt="" src="./img/with.png">
+		<img alt="" src="./img/with.png" style="width:auto; height:700px;">
+		<img alt="" src="./img/login.png" style="width:auto; height:500px;">
 	</div>
+
 
 	<!--  <a href="./board">보드로 가기</a>  -->
 </body>

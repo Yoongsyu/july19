@@ -5,8 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel = "stylesheet" href="./css/menu.css">
-<link rel = "stylesheet" href="./css/notice.css">
+<link rel="stylesheet" href="./css/menu.css">
 <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 <link rel="icon" href="./img/favicon.ico" type="image/x-con">
 
@@ -14,26 +13,12 @@
     <th:block th:replace="board2/fragments/config :: configFragment"> </th:block>
 
     <!-- Style CSS -->
-    <link rel="stylesheet" th:href="@{/css/notice.css}"/>
+    <link rel="stylesheet" th:href="@{/css/login.css}"/>
     
-
 </head>
 <body>
-<%@ include file="menu.jsp"%>
-
-
-<div style="padding:10px 10px 10px 25px;">
-<h1>Sullivan</h1>
-</div>
-<div class="text">
-James P. Sullivan
-</div>
-		<div style="text-align : left";>	
-	<img alt = "" src="./img/sullivan.png" >
-	</div>
-	
-<div style="text-align : middle";>
-	<class="text-center d-flex">
+<%@ include file = "menu.jsp" %>
+<class="text-center d-flex">
     <main class="form-signin w-100 m-auto">
         <form method="post">
             <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
@@ -59,8 +44,6 @@ James P. Sullivan
                </a>
         </div>
     </main>
-	</div>
-	
-	<!--  <a href="./board">보드로 가기</a>  -->
+
 </body>
 </html>
