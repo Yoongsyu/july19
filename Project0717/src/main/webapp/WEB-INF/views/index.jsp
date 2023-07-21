@@ -13,11 +13,11 @@
 </head>
 <body>
 	<%@ include file="menu.jsp"%>
+	<!-- <%=request.getHeader("User-Agent") %> -->
 	<br>
 	<br>
 	<div style="text-align: center";>
-		<img alt="" src="./img/with.png" style="width:auto; height:700px;">
-		<img alt="" src="./img/login.png" style="width:auto; height:500px;">
+		<img alt="" src="./img/with.png">
 	</div>
 
 

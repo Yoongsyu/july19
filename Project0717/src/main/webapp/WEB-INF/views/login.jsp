@@ -1,49 +1,49 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" href="./css/menu.css">
+<link rel="stylesheet" href="./css/login.css">
 <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 <link rel="icon" href="./img/favicon.ico" type="image/x-con">
 
- <!-- Bootstrap -->
-    <th:block th:replace="board2/fragments/config :: configFragment"> </th:block>
-
-    <!-- Style CSS -->
-    <link rel="stylesheet" th:href="@{/css/login.css}"/>
-    
 </head>
 <body>
-<%@ include file = "menu.jsp" %>
-<class="text-center d-flex">
-    <main class="form-signin w-100 m-auto">
-        <form method="post">
-            <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+	<%@ include file="menu.jsp"%>
+	<form action="./login" method="post">
+		<div id="loginlogout">
+			<div class="form-floating1">
+				<label for="floatingInput"></label> <input id="id" type="text"
+					class="form-control" name="id" style="width: 400px; height: 60px;"
+					class="absolute">
+			</div>
 
-            <div class="form-floating">
-                <input id="floatingInput" type="text" class="form-control" name="userId">
-                <label for="floatingInput">ID</label>
-            </div>
-            <div class="form-floating">
-                <input id="floatingPassword" type="password" class="form-control" name="password" autocomplete="off">
-                <label for="floatingPassword">Password</label>
-            </div>
+			<div class="form-floating2">
+				<label for="floatingPassword"></label> <input id="pw"
+					type="password" class="form-control" name="pw" autocomplete="off"
+					style="width: 400px; height: 60px;" class="absolute">
+			</div>
+		</div>
+		
+			<div class="checkbox3">
+		<input id="rememberId" type="checkbox"/><label for="rememberId">
+			아이디 저장</label>
+	</div>
+		<div class = "submit">
+			<button type="submit" value="submit" style = "color : white; background-color:#29B6F6; width: 70px; height: 30px">로그인</button>
+		</div>
+		<div class = "button">
+			<button type="button" style = "background-color:#AED581; width: 70px; height: 30px;
+			">회원가입</button>
+		</div>
+		
+	</form>
+	<img alt="" src="./img/login2.png" style="width: 1000px; height: auto;">
 
-            <div class="checkbox mb-3">
-                <input id="rememberId" type="checkbox"/>
-                <label for="rememberId">아이디 저장</label>
-            </div>
-            <button type="submit" class="w-100 btn btn-lg btn-primary">로그인</button>
-        </form>
-        <div>
-               <a th:href="@{/signup}">
-                   <button type="button" class="w-100 mt-1 btn btn-lg btn-secondary">회원가입</button>
-               </a>
-        </div>
-    </main>
+
 
 </body>
 </html>

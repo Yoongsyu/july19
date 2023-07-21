@@ -17,6 +17,8 @@
 		<div style="text-align: center";>
 		<img alt="" src="./img/monsters.png">
 	</div>
+	
+	
 	<!--  <a href="./board">보드로 가기</a>  -->
 </body>
 </html>

@@ -29,7 +29,7 @@ padding:0;
 nav li{
 list-style: none;  /*li앞에 원을 없애줍니다 */
 float: left;
-width: 120px;
+width: 170px;
 height:50px;
 line-height:50px;
 text-align: center;
@@ -40,4 +40,8 @@ nav li:hover {
 	background-color: #29B6F6;
 	color : white;
 	font-weight : bold;
+}
+
+.lir{
+	float: right;
 }

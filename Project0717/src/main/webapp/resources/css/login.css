@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+.img {
+	width: 100%;
+	vertical-align: middle;
+	left: 340px;
+	top: 450px;
+}
+
+.form-floating1 {
+	position: absolute;
+	vertical-align: middle;
+	left: 340px;
+	top: 410px;
+}
+
+.form-floating2 {
+	position: absolute;
+	vertical-align: middle;
+	left: 340px;
+	top: 520px;
+}
+
+div.submit {
+	position: absolute;
+	vertical-align: middle;
+	left: 570px;
+	top: 610px;
+	
+}
+div.button {
+	position: absolute;
+	vertical-align: middle;
+	left: 650px;
+	top: 610px;
+
+}
+
+div.checkbox3 {
+	position: absolute;
+	left: 360px;
+	top: 610px;
+	font-size: 15px;
+}
