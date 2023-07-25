@@ -21,18 +21,29 @@ public class BoardService {
 	
 
 	// 보드 리스트 불러오는 메소드
-	public List<Map<String, Object>> boardList() {
+	public List<BoardDTO> boardList() {
 		return boardDAO.boardList();
 	}
 
-	public BoardDTO detail(int bno) {
-		BoardDTO dto = boardDAO.detail(bno);
-		// 172.30.1.35 --> 172.♡.1.19
+	public BoardDTO detail(BoardDTO dto2) {
+		
+		//좋아요수 +1 하기 기능
+		boardDAO.likeUp(dto2);
+		
+		BoardDTO dto = boardDAO.detail(dto2);
+		System.out.println(dto);
+		//System.out.println(dto.getBno());
+		//System.out.println(dto.getBip());
+		
+		if(dto != null) { //내 글이 아닐때는 null 들어옵니다. 즉, null이 아닐때라고 검사해주세요
+				// 172.30.1.35 --> 172.♡.1.19
 		if (dto.getBip() != null && dto.getBip().indexOf(".") != -1) {
 			String ip = dto.getBip();
 			String[] ipArr = ip.split("\\.");
 			ipArr[1] = "♡";
 			dto.setBip(String.join(".", ipArr));
+		}
+
 		}
 		return dto;
 

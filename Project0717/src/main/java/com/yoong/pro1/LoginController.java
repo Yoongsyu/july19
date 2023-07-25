@@ -31,13 +31,13 @@ public class LoginController {
 		
 		//System.out.println(result.getM_name());
 		//System.out.println(result.getCount());
+		System.out.println(result.getCount());
 		
 		if(result.getCount() == 1) {
 			//세션을 만들어서 로그인을 지정 시간동안 유지
 			HttpSession session = request.getSession();
 			session.setAttribute("mname", result.getM_name());
-			session.setAttribute("mid", result.getM_id());
-			
+			session.setAttribute("mid", request.getParameter("id"));
 			
 			return "redirect:index"; // 정상적으로 로그인 했다면 인덱스로 가기
 		} else {
