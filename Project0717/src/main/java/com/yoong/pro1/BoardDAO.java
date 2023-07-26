@@ -41,4 +41,12 @@ public class BoardDAO {
 		sqlSession.update("board.likeUp", dto2);
 		
 	}
+
+	public int totalCount() {
+		return sqlSession.selectOne("board.totalCount");
+	}
+
+	public List<BoardDTO> boardList(PageDTO page) {
+		return sqlSession.selectList("board.boardList", page);
+	}
 }

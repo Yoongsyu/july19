@@ -2,6 +2,7 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+<%@ taglib prefix="ui" uri="http://egovframework.gov/ctl/ui"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,8 +11,12 @@
 <link rel="stylesheet" href="./css/menu.css">
 <link rel="stylesheet" href="./css/board.css">
 <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
-<link rel="icon" href="./img/favicon.ico" type="image/x-con">
-
+<link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+<script type = "text/javascript">
+	function linkPage(pageNo){
+		location.href = "./board?pageNo="+pageNo;
+	}
+</script>
 </head>
 <body>
 	<%@ include file="menu.jsp"%>
@@ -52,6 +57,10 @@
 						</tr>
 					</c:forEach>
 				</table>
+				<br>
+				<div style="text-align: center;">
+				<ui:pagination paginationInfo = "${paginationInfo }" type="image" jsFunction="linkPage" />
+				</div>
 			</c:when>
 			<c:otherwise>
 				<h1>출력할 데이터가 없네</h1>

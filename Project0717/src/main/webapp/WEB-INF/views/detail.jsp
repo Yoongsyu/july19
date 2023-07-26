@@ -11,6 +11,7 @@
 <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 <link rel="icon" href="./img/favicon.ico" type="image/x-con">
 <script type="text/javascript">
+
 	
 function edit(){
 	if(confirm("고칠끼가?")) {
@@ -82,6 +83,15 @@ function edit(){
 	    }
 	}
 	
+	function showCommentSection7() {
+	    var currentURL = window.location.href;
+	    if (currentURL === "http://172.30.1.90/detail?bno=129") {
+	        document.getElementById("comment-section7").style.display = "block";
+	    } else {
+	        document.getElementById("comment-section7").style.display = "none";
+	    }
+	}
+
 
 	// 댓글 섹션 표시 여부 확인
 	document.addEventListener("DOMContentLoaded", function() {
@@ -106,6 +116,10 @@ function edit(){
 	// 댓글 섹션 표시 여부 확인
 	document.addEventListener("DOMContentLoaded", function() {
 	    showCommentSection6();
+	});	
+	// 댓글 섹션 표시 여부 확인
+	document.addEventListener("DOMContentLoaded", function() {
+	    showCommentSection7();
 	});	
 	
 </script>
@@ -216,6 +230,19 @@ function edit(){
                 <li>
                     <div class="name2" style="font-weight : bold;" >융슈타인</div> 
                     <div class="content2">감사해용</div>
+                    <span><div class="date2">${dto.bdate }</div></span>
+                    <div class="ip2"></div>
+                    <button class="good">좋아요</button>
+                    <button class="bad">싫어요</button>
+                </li>
+            </ul>
+        </section>
+        
+       <section id="comment-section7" style="display: none;">
+            <ul style="display: inline;">
+                <li>
+                    <div class="name2" style="font-weight : bold;" >융슈타인</div> 
+                    <div class="content2">어떻게 이렇게 전문적인 글을 적은 것이죠..?!?!</div>
                     <span><div class="date2">${dto.bdate }</div></span>
                     <div class="ip2"></div>
                     <button class="good">좋아요</button>
