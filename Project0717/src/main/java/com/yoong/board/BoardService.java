@@ -1,4 +1,4 @@
-package com.yoong.pro1;
+package com.yoong.board;
 
 import java.util.List;
 import java.util.Map;
@@ -8,6 +8,9 @@ import javax.inject.Named;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import com.yoong.util.PageDTO;
+import com.yoong.util.Util;
 
 @Service("boardService")
 public class BoardService {

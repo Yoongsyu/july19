@@ -91,6 +91,40 @@ function edit(){
 	        document.getElementById("comment-section7").style.display = "none";
 	    }
 	}
+	
+	function showCommentSection8() {
+	    var currentURL = window.location.href;
+	    if (currentURL === "http://172.30.1.90/detail?bno=137") {
+	        document.getElementById("comment-section8").style.display = "block";
+	    } else {
+	        document.getElementById("comment-section8").style.display = "none";
+	    }
+	}
+	
+	function showCommentSection9() {
+	    var currentURL = window.location.href;
+	    if (currentURL === "http://172.30.1.90/detail?bno=138") {
+	        document.getElementById("comment-section9").style.display = "block";
+	    } else {
+	        document.getElementById("comment-section9").style.display = "none";
+	    }
+	}
+	function showCommentSection10() {
+	    var currentURL = window.location.href;
+	    if (currentURL === "http://172.30.1.90/detail?bno=139") {
+	        document.getElementById("comment-section10").style.display = "block";
+	    } else {
+	        document.getElementById("comment-section10").style.display = "none";
+	    }
+	}
+	function showCommentSection11() {
+	    var currentURL = window.location.href;
+	    if (currentURL === "http://172.30.1.90/detail?bno=140") {
+	        document.getElementById("comment-section11").style.display = "block";
+	    } else {
+	        document.getElementById("comment-section11").style.display = "none";
+	    }
+	}
 
 
 	// 댓글 섹션 표시 여부 확인
@@ -120,6 +154,22 @@ function edit(){
 	// 댓글 섹션 표시 여부 확인
 	document.addEventListener("DOMContentLoaded", function() {
 	    showCommentSection7();
+	});	
+	// 댓글 섹션 표시 여부 확인
+	document.addEventListener("DOMContentLoaded", function() {
+	    showCommentSection8();
+	});	
+	// 댓글 섹션 표시 여부 확인
+	document.addEventListener("DOMContentLoaded", function() {
+	    showCommentSection9();
+	});	
+	// 댓글 섹션 표시 여부 확인
+	document.addEventListener("DOMContentLoaded", function() {
+	    showCommentSection10();
+	});	
+	// 댓글 섹션 표시 여부 확인
+	document.addEventListener("DOMContentLoaded", function() {
+	    showCommentSection11();
 	});	
 	
 </script>
@@ -243,6 +293,58 @@ function edit(){
                 <li>
                     <div class="name2" style="font-weight : bold;" >융슈타인</div> 
                     <div class="content2">어떻게 이렇게 전문적인 글을 적은 것이죠..?!?!</div>
+                    <span><div class="date2">${dto.bdate }</div></span>
+                    <div class="ip2"></div>
+                    <button class="good">좋아요</button>
+                    <button class="bad">싫어요</button>
+                </li>
+            </ul>
+        </section>
+ 
+       <section id="comment-section8" style="display: none;">
+            <ul style="display: inline;">
+                <li>
+                    <div class="name2" style="font-weight : bold;" >융슈타인</div> 
+                    <div class="content2">우와!! 감사해요ㅜㅜ 아껴쓸게요 ♡♡ 옆에서 수진이형이 탐냄 !!</div>
+                    <span><div class="date2">${dto.bdate }</div></span>
+                    <div class="ip2"></div>
+                    <button class="good">좋아요</button>
+                    <button class="bad">싫어요</button>
+                </li>
+            </ul>
+        </section>
+ 
+       <section id="comment-section9" style="display: none;">
+            <ul style="display: inline;">
+                <li>
+                    <div class="name2" style="font-weight : bold;" >융슈타인</div> 
+                    <div class="content2">흠~ 이번 주말에 할까요~?!</div>
+                    <span><div class="date2">${dto.bdate }</div></span>
+                    <div class="ip2"></div>
+                    <button class="good">좋아요</button>
+                    <button class="bad">싫어요</button>
+                </li>
+            </ul>
+        </section>
+ 
+       <section id="comment-section10" style="display: none;">
+            <ul style="display: inline;">
+                <li>
+                    <div class="name2" style="font-weight : bold;" >융슈타인</div> 
+                    <div class="content2">괜찮아 대규야~ 그럴 수 있지~ 나는 괜찮아 정말 괜.찮.아^^</div>
+                    <span><div class="date2">${dto.bdate }</div></span>
+                    <div class="ip2"></div>
+                    <button class="good">좋아요</button>
+                    <button class="bad">싫어요</button>
+                </li>
+            </ul>
+        </section>
+ 
+       <section id="comment-section11" style="display: none;">
+            <ul style="display: inline;">
+                <li>
+                    <div class="name2" style="font-weight : bold;" >융슈타인</div> 
+                    <div class="content2">우와우와 싸인 감사해요 ♡ 잘 간직하겠어요 ♡</div>
                     <span><div class="date2">${dto.bdate }</div></span>
                     <div class="ip2"></div>
                     <button class="good">좋아요</button>

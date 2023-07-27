@@ -1,4 +1,4 @@
-package com.yoong.pro1;
+package com.yoong.login;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

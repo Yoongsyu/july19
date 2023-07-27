@@ -1,4 +1,4 @@
-package com.yoong.pro1;
+package com.yoong.util;
 
 import javax.servlet.http.HttpServletRequest;
 

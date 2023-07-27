@@ -1,4 +1,4 @@
-package com.yoong.pro1;
+package com.yoong.board;
 
 import java.util.List;
 import java.util.Map;
@@ -8,6 +8,8 @@ import javax.inject.Named;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.stereotype.Repository;
+
+import com.yoong.util.PageDTO;
 
 //Inject 사용해보기
 

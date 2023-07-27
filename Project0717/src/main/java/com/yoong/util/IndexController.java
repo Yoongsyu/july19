@@ -1,4 +1,4 @@
-package com.yoong.pro1;
+package com.yoong.util;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

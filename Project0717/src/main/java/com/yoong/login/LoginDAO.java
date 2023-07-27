@@ -1,4 +1,4 @@
-package com.yoong.pro1;
+package com.yoong.login;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
