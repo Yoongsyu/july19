@@ -125,6 +125,14 @@ function edit(){
 	        document.getElementById("comment-section11").style.display = "none";
 	    }
 	}
+	function showCommentSection12() {
+	    var currentURL = window.location.href;
+	    if (currentURL === "http://172.30.1.90/detail?bno=141") {
+	        document.getElementById("comment-section12").style.display = "block";
+	    } else {
+	        document.getElementById("comment-section12").style.display = "none";
+	    }
+	}
 
 
 	// 댓글 섹션 표시 여부 확인
@@ -171,6 +179,11 @@ function edit(){
 	document.addEventListener("DOMContentLoaded", function() {
 	    showCommentSection11();
 	});	
+	// 댓글 섹션 표시 여부 확인
+	document.addEventListener("DOMContentLoaded", function() {
+	    showCommentSection12();
+	});	
+	
 	
 </script>
 </head>
@@ -345,6 +358,19 @@ function edit(){
                 <li>
                     <div class="name2" style="font-weight : bold;" >융슈타인</div> 
                     <div class="content2">우와우와 싸인 감사해요 ♡ 잘 간직하겠어요 ♡</div>
+                    <span><div class="date2">${dto.bdate }</div></span>
+                    <div class="ip2"></div>
+                    <button class="good">좋아요</button>
+                    <button class="bad">싫어요</button>
+                </li>
+            </ul>
+        </section>
+ 
+       <section id="comment-section12" style="display: none;">
+            <ul style="display: inline;">
+                <li>
+                    <div class="name2" style="font-weight : bold;" >융슈타인</div> 
+                    <div class="content2">되거든요 목사님??</div>
                     <span><div class="date2">${dto.bdate }</div></span>
                     <div class="ip2"></div>
                     <button class="good">좋아요</button>

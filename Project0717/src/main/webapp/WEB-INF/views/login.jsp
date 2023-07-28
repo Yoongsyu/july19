@@ -71,7 +71,7 @@ function check() {
 			<span id="msg"></span>
 		</div>
 		<div class = "button">
-			<button type="button" style = "background-color:#AED581; width: 70px; height: 30px;
+			<button type="button" onclick="link('agree')" style = "background-color:#AED581; width: 70px; height: 30px;
 			">회원가입</button>
 		</div>
 		

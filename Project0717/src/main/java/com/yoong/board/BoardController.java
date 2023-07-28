@@ -181,10 +181,7 @@ public class BoardController {
 		return "redirect:board?bno="+dto.getBno(); // 보드로 이동하게 해주세요
 	}
 
-	@GetMapping("/join")
-	public String join() {
-		return "join";
-	}
+	
 	
 	
 }

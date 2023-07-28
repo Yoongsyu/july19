@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.all {
+	margin-left: 25px;
+}
+
+img.absolute { 
+        position: absolute;
+        left: 650px;
+        top: 100px;
+      }
+	
+
+
+

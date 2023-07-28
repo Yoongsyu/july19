@@ -9,6 +9,7 @@
 		<li onclick="link('mike')">Boo</li>
 		<li onclick="link('monsters')">Monsters, inc.</li>
 		<li onclick="link('mooni')">문의사항</li>
+		<li onclick="link('members')">멤버☆</li>
 
 		<c:choose>
 			<c:when test="${sessionScope.mname eq null }">

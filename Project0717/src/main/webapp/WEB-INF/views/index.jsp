@@ -16,8 +16,8 @@
 	<!-- <%=request.getHeader("User-Agent") %> -->
 	<br>
 	<br>
-	<div style="text-align: center";>
-		<img alt="" src="./img/with.png">
+	<div style="text-align: center;">
+		<img alt="" src="./img/Monsters-Inc.-Logo.png" style= "width: 1000px">
 	</div>
 
 
